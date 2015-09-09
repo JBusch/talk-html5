@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML5 - eine Übersicht</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+    <section>
+        <h1>html5</h1>
+        <p>
+        <img src="HTML5_Badge_512.png">
+    </p>
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+    <h2>Kurze übersicht über die <br>Entwicklung von<font color="#FF6600">HTML</font></h2>
+    <p>
+    <br>
+</p>
+<ul id="timeline">
+    <li data-auto="">
+        <span class="year">1991</span> <font color="#FF6600">
+            <span class="html">HTML</span>
+        </font>
+    </li>
+    <li data-auto="">
+        <span class="year">1994</span> <font color="#FF6600">
+            <span class="html">HTML 2</span>
+        </font>
+    </li>
+    <li data-auto="">
+        <span class="year">1997</span> <font color="#FF6600">
+            <span class="html">HTML 4</span>
+        </font>
+    </li>
+    <li data-auto="">
+        <span class="year">2000</span> <font color="#FF6600">
+            <span class="html">XHTML 1</span>
+        </font>
+    </li>
+    <li>
+        <span class="year">
+            <em class="stroke">2009</em>
+        </span> <font color="#FF6600">
+        <span class="html">HTML 5</span>
+    </font>
+</li>
+</ul>
+</section>
+<section>
+    <section>
+        <h2>Wer entwickelt <font color="#FF6600">HTML5?</font></h2>
+<h2>
+        <a href="http://www.w3.org/">W3C</a>
+</h2>
+<blockquote>
+<p>
+Das <b>World Wide Web Consortium</b> (kurz <b>W3C</b>) ist das Gremium zur Standardisierung der 
+World Wide Web betreffenden Techniken.<br>
+</p>
+</blockquote>
+<small>
+(Quelle: Wikipeadia)<br>
+    </small>
+</section>
+    <section>
+<h2>
+<a href="http://www.whatwg.org/">WHAT WG<br>
+</a>
+</h2>
+<blockquote>Die <b>Web Hypertext Application Technology Working Group</b> (<b>WHATWG</b>)
+ ist eine Arbeitsgruppe, deren Ziel darin besteht, durch Erweiterung von
+ bereits bestehenden Technologien neue Technologien zu entwickeln, die 
+es Autoren erleichtern soll, Internetanwendungen zu erstellen.<br>
+</blockquote>
+<small>(Quelle: Wikipedia)</small>
+<p>
+    <br>
+</p>
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+    <h2>
+        <a href="http://www.whatwg.org/">WHAT WG</a>
+    </h2>
+    <ul>
+        <li>besteht unter anderem aus&nbsp; Mozilla Foundation, Opera Software ASA und Apple Inc<br>
+        </li>
+        <li>Spricht vom "<i>Living Standard</i>"</li>
+        <li>aus <font color="#FF6600">HTML5</font> wird <font color="#FF6600">HTML</font>
+        <br>
+    </li>
+</ul>
+</section>
+</section>
+<section>
+    <section>
+        <h1>
+            <br>
+        </h1>
+        <h1>HTML5 <br>
+        </h1>
+        <h2>
+            <br>
+        </h2>
+        <h2>besteht aus <font color="#FF6600">HTML</font>, <font color="#006699">CSS </font>und <font color="#006600">JS</font>
+    </h2>
+</section>
+<section>
+    <h2>Alte Semantik</h2>
+<p>aus</p>
+<pre>
+<code>
+		    &lt;div id=&quot;header&quot;&gt;Kopf&lt;/div&gt;
+		    
+		    &lt;div class=&quot;navigation&quot;&gt;Navigation&lt;/div&gt;
+		    
+		    &lt;div class=&quot;content&quot;&gt;
+		    	&lt;h1&gt;Überschrift&lt;/h1&gt;
+		    	&lt;h2&gt;Artikel Untertitel&lt;/h2&gt;
+		    	
+		    	&lt;div class=&quot;Kapietl&quot;&gt;
+		    		&lt;h3&gt;Kapitel 1&lt;/h3&gt;
+		    	&lt;/div&gt;
+		    &lt;/div&gt;
+		    
+		    &lt;div id=&quot;footer&quot;&gt;Footer&lt;/div&gt;
+		    
+</code>
+</pre>
+<p>wird</p>
+</section>
+<section>
+    <h2>Neue Semantik</h2>
+<pre>
+<code>
+			&lt;header&gt;Kopf&lt;/header&gt;
+			&lt;nav&gt;Navigation&lt;/nav&gt;
+			
+			&lt;article&gt;
+				&lt;hgroup&gt; 
+			    &lt;h1&gt;Artikel Überschrift&lt;/h1&gt; 
+			    &lt;h2&gt;Artikel Untertitel&lt;/h2&gt; 
+			&lt;/hgroup&gt;
+
+			&lt;section&gt;
+			    &lt;h1&gt; Kapitel 1&lt;/h1&gt;
+			    &lt;p&gt;Lorem Ipsum&lt;/p&gt;
+			&lt;/section&gt;
+			&lt;/article&gt;
+			&lt;footer&gt;Footer&lt;/footer&gt;
+</code>
+</pre>
+</section>
+
+<section>
+    <h2>
+        <br>
+    </h2>
+    <h2>Microdata</h2>
+    <ul>
+        <li>zusätzliche Semantic für Webseiten</li>
+        <li>Versuch maschinenlesbare Informationen in <font color="#FF6600">HTML</font>-Dokumente zu definieren</li>
+        <li>Browser, Browser-Extensions und Suchmaschinen können den Code zb. in vCard konvertieren</li>
+    </ul>
+<pre>
+<code>
+&lt;div itemscope itemtype=&quot;http://microformats.org/profile/hcard&quot;&gt;
+	&lt;span itemprop=&quot;fn&quot;&gt;Max Mustermann&lt;/span&gt;
+	&lt;img itemprop=&quot;photo&quot; src=&quot;avatar.png&quot; alt=&quot;Avatar&quot; /&gt;
+&lt;/div&gt;
+</code>    	
+</pre>
+</section>
+
+<section>
+   <h2>Forms</h2>
+   <h3>Neue Input Types</h3>
+		<ul>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#text-state-and-search-state">&lt;input type="search"&gt;</a> for search boxes
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/number-state.html#number-state">&lt;input type="number"&gt;</a> for spinboxes
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/number-state.html#range-state">&lt;input type="range"&gt;</a> for sliders
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/number-state.html#color-state">&lt;input type="color"&gt;</a> for color pickers
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#telephone-state">&lt;input type="tel"&gt;</a> for telephone numbers
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#url-state">&lt;input type="url"&gt;</a> for web addresses
+			</li>
+		</ul>
+	</li>
+</section>
+
+<section>
+	<h2>Forms</h2>
+   	<h3>Neue Input Types</h3>
+	<ul>
+		<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#e-mail-state">&lt;input type="email"&gt;</a> for email addresses
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#date-state">&lt;input type="date"&gt;</a> for calendar date pickers
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#month-state">&lt;input type="month"&gt;</a> for months
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#week-state">&lt;input type="week"&gt;</a> for weeks
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#time-state">&lt;input type="time"&gt;</a> for timestamps
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#date-and-time-state">&lt;input type="datetime"&gt;</a> for precise, absolute date+time stamps
+			</li>
+			<li><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#local-date-and-time-state">&lt;input type="datetime-local"&gt;</a> for local dates and times
+			</li>
+	</ul>
+</section>
+<section>
+		<h2>beschreibende Link-Relationen</h2>
+		<pre style="font-size: 45%"><span class="tag">&lt;link</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"alternate"</span></b><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"application/rss+xml"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/feed"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;link</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"icon"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/favicon.ico"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;link</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"pingback"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/xmlrpc.php"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;link</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"prefetch"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/main.php"</span><span class="tag">/&gt;</span><span class="pln"><br><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"archives"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/archives"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">old posts</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"external"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://notmysite.com"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">tutorial</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"license"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.apache.org/licenses/LICENSE-2.0"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">license</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://notmysite.com/sample"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">wannabe</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"><br></span><span class="tag">&lt;a</span><span class="pln"> </span><b><span class="atn">rel</span><span class="pun">=</span><span class="atv">"tag"</span></b><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://myblog.com/category/games"</span><span class="tag">&gt;</span><span class="underlined"><span class="pln">games posts</span></span><span class="tag">&lt;/a&gt;</span><span class="pln"></span></pre>
+
+</section>
+
+
+</section>
+<section>
+    <section>
+        <h1>
+            <br>
+        </h1>
+        <h1>Neue Elemente</h1>
+
+
+
+</section>
+        <section>
+            <h2>Canvas</h2>
+<p>mit dem Canvas-Element kann über <font color="#006600">JS</font> gezeichnet werden<br>
+<br> </p>
+<p>
+<iframe src="http://html5doctor.com/demos/modernizr/canvas-not.htm" name="Canvas Example" height="200" width="300">
+</iframe>
+</p>
+
+</section>
+<section>
+                <h2>
+                    <br>
+                </h2>
+                <h2>Video</h2>
+                <ul>
+    <li>mit dem Video-Element können Videos ohne weiteren Bedarf an Player eingebunden werden</li>
+    <li>momentan herrscht noch Uneinigkeit über die zu verwendenden Codecs, möglich sind .mp4, .webm und.ogv</li>
+    <li>
+       Fallback: <a href="http://camendesign.com/code/video_for_everybody"> Video for Everybody</a>
+            </li>
+</ul>
+</section>
+
+<section>
+                <h2>
+                    <br>
+                </h2>
+                <h2>Audio</h2>
+  <ul>
+    <li>ähnlich wie beim Video-Element kann hier ohne zusätzlichen Aufwand eine Audiodatei eingebunden werden</li>
+    <li>auch hier besteht noch uneinigkeit des zu verwendenden Formats, möglich sind .mp3, .wav und .ogg</li>
+  </ul>
+<pre>
+<code>
+  	&lt;audio controls autobuffer&gt;
+  		&lt;source src=&quot;musik.ogg&quot; /&gt;
+  		&lt;source src=&quot;musik.mp3&quot; /&gt;
+	&lt;/audio&gt;
+</code>
+</pre>
+</section>
+
+</section>
+<section>
+	<h1>Es gibt noch mehr zu entdecken!</h1>
+	<a href="http://www.html5rocks.com">http://www.html5rocks.com</a><br />
+	<a href="http://html5doctor.com/">http://html5doctor.com/</a><br />
+	<a href="https://developer.mozilla.org/en-US/docs/HTML">Mozilla Developer Network (MDN)</a><br />
+	<a href="http://www.adobe.com/devnet/dreamweaver/articles/understanding-html5-semantics.html">Adobe über Semantik</a>
+</section>
+    </div>
+
+		
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					//{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					//{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					//{ src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
